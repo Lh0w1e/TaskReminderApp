@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultAccent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Select Time"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/colorDefault"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/custom_add_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:headerBackground="@color/colorDefault"
+                android:timePickerMode="clock">
+
+            </TimePicker>
+
+            <Button
+                android:id="@+id/custom_add_time_ok"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:text="OK"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@color/colorDefault" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
